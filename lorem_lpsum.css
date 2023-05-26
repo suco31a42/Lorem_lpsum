@@ -79,7 +79,6 @@ main {
 .main-visual-p {
   font-size: 20px;
   color: #fafafa;
-  
 }
 
 /*共通CSS*/
@@ -99,7 +98,10 @@ main {
 .p {
   font-size: 16px;
   color: #000000;
-  padding: 30px 0;
+}
+
+.temple-p {
+  margin: 30px 0;
 }
 
 .text-left {
@@ -117,6 +119,12 @@ main {
   font-size: 20px;
   color: #000000;
 }
+
+.container {
+  width: 50%;
+  display: inline-block;
+}
+
 /*portfolio*/
 
 #portfolio {
@@ -164,7 +172,7 @@ main {
 
 .portfolio-box:nth-child(n+3) {
   margin-bottom: 0;
-} 
+}
 
 .portfolio-box:nth-child(3n) {
   margin-right: 0;
@@ -174,6 +182,10 @@ main {
 
 .feature-item {
   width: 980px;
+}
+
+.feature-h6 {
+  padding: 10px 0;
 }
 
 .feature-contants {
@@ -199,7 +211,7 @@ main {
 }
 
 .fas {
-  font-size: 60px;
+  font-size: 55px;
 }
 
 /*Profile*/
@@ -208,14 +220,14 @@ main {
   background-color: #eceff1
 }
 
+.profile-item {
+  width: 1024px;
+}
+
 .profile-contants {
   width: 1024px;
   margin: 0 auto;
   display: flex;
-}
-
-.profile-content {
-  width: 50%;
 }
 
 .profile-image {
@@ -223,8 +235,72 @@ main {
   height: 250px;
   width: 250px;
   display: inline-block;
+  border-radius: 50%;
 }
 
-.profile-contants {
-  width: 50%;
+.profile-container {
+  text-align: center;
 }
+
+.profile-h6 {
+  padding-bottom: 5px;
+}
+
+.portfolio-p {
+ padding-top: 5px;
+}
+
+.myneme {
+  padding-top: 20px
+}
+
+/*contant*/
+
+.contant-item {
+  width: 800px;
+}
+
+.contant-contants {
+  display: flex;
+}
+
+.contant-container {
+  margin: 0 auto;
+  width: 35%;
+  text-align: left;
+}
+
+.contant-h6 {
+  padding-bottom: 5px;
+}
+
+.contant-p {
+  text-decoration: underline;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+.mail-p {
+  padding-bottom: 20px;
+}
+
+.SNS-h6 {
+  padding-bottom: 5px;
+}
+
+.fab {
+  font-size: 50px;
+}
+
+.fa-twitter {
+  margin: 0 20px;
+}
+
+
+
+
+
+
+
