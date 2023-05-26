@@ -1,0 +1,83 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #ec715f
+}
+
+nav {
+  width: 1024px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  background-image: url(img/logo.png);
+  background-size: cover;
+  height: 70px;
+  width: 140px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list-item {
+  color: #FAFAFA;
+  font-size: 16px;
+  margin: 0 30px;
+  line-height: 70px;
+}
+
+/*main*/
+main {
+  width: 100%;
+}
+
+.main-visual {
+  background-image: url(img/mv.png);
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  width: 100%;
+}
+
+.main-visual-item {
+  padding-top: 200px;
+  text-align: center;
+}
+
+.main-visual-h2 {
+  font-size: 64px;
+  color: #fafafa;
+  margin-bottom: 10px;
+}
+
+.main-visual-p {
+  font-size: 20px;
+  color: #fafafa;
+  
+}
+
+/*po*/
