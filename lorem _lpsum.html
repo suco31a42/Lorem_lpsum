@@ -12,34 +12,42 @@
   <body>
     <!-- header -->
     <header>
-      <nav>
+      <div class="header-nav">
         <a href="#main-visual" class="header-logo"></a>
-
-        <ul class="nav-list">
-          <li class="nav-list-item">
-            <a href="#portfolio">Potyfolio</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#feature">Feature</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#profile">Profile</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#contant">Contant</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="nav-content">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="#portfolio">Potyfolio</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#feature">Feature</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#profile">Profile</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="sp-menu">
+          <input type="checkbox" id="sp-menu__check"/>
+          <label for="sp-menu__check" class="sp-menu__box">
+            <span></span>
+          </label>
+        </div>
+      </div>
     </header>
 
     <!-- main -->
     <main>
       <div id="main-visual">
-        <div class="main-visual-item">
+        <div class="main-visual-item item">
           <h2 class="main-visual-h2">Lorem Ipsum</h2>
           <p class="main-visual-p">simply dummy text of the printing</p>
         </div>
       </div>
+      
       <div id="portfolio">
         <div class="item">
           <h4 class="portfolio-h4 h4">Portfolio</h4>
@@ -118,7 +126,7 @@
               </div>
               <div class="profile-box">
                 <h6 class="text-left profile-h6 h6 myneme">MySkills</h6>
-                <p class="text-left p profile-p">HTML/CSS,JavaScript,JQuery,PhotoShop</p>
+                <p class="text-left p profile-p">HTML/CSS, JavaScript ,JQuery ,PhotoShop</p>
               </div>
             </div>
           </div>  
@@ -127,26 +135,26 @@
 
 
 
-      <div id="contant">
-        <div class="contant-item item">
-          <h4 class="h4">Contant</h4>
+      <div id="contact">
+        <div class="contact-item item">
+          <h4 class="h4">Contact</h4>
           <div class="border"></div>
           <p class="temple-p p">
             It is a long established fact that a reader will be distracted by the readable <br>
             content of a page when looking at its layout. <br>
             The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
           </p>
-          <div class="contant-contants">
+          <div class="contact-contants">
             <div class="container">
-              <div class="contant-container">
-                <h6 class="h6 contant-h6">Mail</h6>
-                <a class="p contant-p mail-p" href="mailto:xxx@xxx.com">xxx@xxx.com</a>
-                <h6 class="h6 contant-h6">Tel</h6>
-                 <a class="p contant-p" href="tel:+000-0000-0000">000-0000-0000</a>
+              <div class="contact-container">
+                <h6 class="h6 contact-h6">Mail</h6>
+                <a class="p contact-p" href="mailto:xxx@xxx.com">xxx@xxx.com</a>
+                <h6 class="h6 contact-h6 tel">Tel</h6>
+                 <a class="p contact-p" href="tel:+000-0000-0000">000-0000-0000</a>
               </div>
             </div>
             <div class="container">
-              <h6 class="h6 SNS-h6">SNS</h6>
+              <h6 class="h6 sns-h6">SNS</h6>
               <div>
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-twitter"></i>
@@ -159,7 +167,7 @@
     </main>
     <!-- footer -->
     <footer>
-
+      <p class="footer-p">© 2017 WebComp</p>
     </footer>
   </body>
 </html>

@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+p, a {
+  font-family: Century, serif, cursive, sans-serif;
+}
+
+h2, h4, h6 {
+  font-family: Arial, sans-serif;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -24,7 +32,7 @@ header {
   background-color: #ec715f
 }
 
-nav {
+.header-nav {
   width: 1024px;
   height: 70px;
   margin: 0 auto;
@@ -129,8 +137,6 @@ main {
 
 #portfolio {
   background-color: #eceff1;
-  padding-top: 70px;
-  margin-top: -70px;
 }
 
 .portfolio-contants {
@@ -203,8 +209,10 @@ main {
 }
 
 .feature-h6 {
-  padding: 10px 0;
+  padding: 25px 0 10px;
 }
+
+
 
 .feature-box:nth-child(2) {
   margin: 0 10px;
@@ -254,27 +262,27 @@ main {
   padding-top: 20px
 }
 
-/*contant*/
+/*contact*/
 
-.contant-item {
+.contact-item {
   width: 800px;
 }
 
-.contant-contants {
+.contact-contants {
   display: flex;
 }
 
-.contant-container {
+.contact-container {
   margin: 0 auto;
   width: 35%;
   text-align: left;
 }
 
-.contant-h6 {
+.contact-h6 {
   padding-bottom: 5px;
 }
 
-.contant-p {
+.contact-p {
   text-decoration: underline;
 }
 
@@ -282,11 +290,11 @@ main {
   text-decoration: underline;
 }
 
-.mail-p {
-  padding-bottom: 20px;
+.tel {
+  margin-top: 20px;
 }
 
-.SNS-h6 {
+.sns-h6 {
   padding-bottom: 5px;
 }
 
@@ -298,9 +306,181 @@ main {
   margin: 0 20px;
 }
 
+/*footer*/
+
+footer {
+  background-color: #EC715F;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+
+.footer-p {
+  font-size: 16px;
+  color: #fafafa;
+  line-height: 60px;
+}
 
 
+#sp-menu__check {
+  display: none;
+}
 
 
+/* スマホサイズ（425px）以下の際に適用される設定 */
 
-
+@media screen and (max-width:425px) {
+  
+  .nav-content {
+    display: none;
+  }
+  
+  .header-nav {
+   width: 90%;
+  }
+  
+  .sp-menu__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    background-color: #ec715f;
+    outline: 1px solid #ffffff;
+    outline-offset: -7px;
+  }
+  
+  .sp-menu__box span,
+  .sp-menu__box span:before,
+  .sp-menu__box span:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 30px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+  }
+  
+  .sp-menu__box span:before {
+    bottom: 9px;
+  }
+  
+  .sp-menu__box span:after {
+    top: 9px;
+  }
+  
+  
+  #sp-menu__check:checked ~ .sp-menu__box span {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #sp-menu__check:checked ~ .sp-menu__box span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  
+  #sp-menu__check:checked ~ .sp-menu__box span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  
+  #sp-menu__check:checked ~ .hamburger__content {
+    left: 0;
+  }
+  
+  /*main-visual*/
+  #main-visual {
+    background-image: url(img/code.png);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    width: 100%;
+  }
+  
+  .item {
+    width: 90%;
+  }
+  
+  .main-visual-item {
+    padding-top: 200px;
+  }
+  
+  .main-visual-h2 {
+    font-size: 40px;
+  }
+  
+  /*portfolio*/
+  .portfolio-box:nth-child(odd) {
+    display: none;
+  }
+  
+  .portfolio-box:nth-child(even) {
+    margin: 0 auto;
+  }
+  
+  .portfolio-box:nth-child(4) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  
+  /*feature*/
+  .feature-contants {
+    width: 90%;
+  }
+  
+  .feature-container {
+    flex-direction: column;
+  }
+  
+  .feature-box {
+    margin: 10px auto;
+  }
+  
+  .fa-code {
+    margin-top: 30px;
+  }
+  
+  .feature-box:nth-child(2) {
+    margin: 10px;
+  }
+  
+  
+  /*profile*/
+  .profile-contants {
+    width: 90%;
+    flex-direction: column;
+  }
+  .container {
+    width: 100%;
+  } 
+  
+  .profile-p,
+  .profile-h6 {
+    text-align: center;
+  }
+  
+  .profile-h6 {
+    padding-top: 20px;
+  }
+  
+  /*contact*/
+  .contact-contants {
+    flex-direction: column;
+  }
+  
+  .contact-container {
+    text-align: center;
+  }
+  
+  .sns-h6 {
+    margin-top: 20px;
+  }
+  
+  .fa-twitter {
+    margin: 0 8px;
+  }
+  
+  
+}
