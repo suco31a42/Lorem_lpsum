@@ -63,6 +63,19 @@ main {
   width: 100%;
 }
 
+/*arrow*/
+#arrow {
+  position: fixed;
+  right: 4rem;
+  font-size: 40px;
+  bottom: 6rem;
+  width: 3rem;
+  text-align: center;
+  border: solid 1px #ec715f;
+  color: #ec715f;
+  border-radius: 10px;
+}
+
 /*main-visual*/
 
 #main-visual {
