@@ -57,6 +57,13 @@ header {
   margin: 0 30px;
   line-height: 70px;
 }
+#bar {
+  background-color: #ec715f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10px;
+}
 
 /*main*/
 main {
@@ -343,15 +350,15 @@ footer {
 /* スマホサイズ（425px）以下の際に適用される設定 */
 
 @media screen and (max-width:425px) {
-  
+
   .nav-content {
     display: none;
   }
-  
+
   .header-nav {
    width: 90%;
   }
-  
+
   .sp-menu__box {
     display: flex;
     justify-content: center;
@@ -362,7 +369,7 @@ footer {
     outline: 1px solid #ffffff;
     outline-offset: -7px;
   }
-  
+
   .sp-menu__box span,
   .sp-menu__box span:before,
   .sp-menu__box span:after {
@@ -374,34 +381,34 @@ footer {
     background-color: #ffffff;
     position: absolute;
   }
-  
+
   .sp-menu__box span:before {
     bottom: 9px;
   }
-  
+
   .sp-menu__box span:after {
     top: 9px;
   }
-  
-  
+
+
   #sp-menu__check:checked ~ .sp-menu__box span {
     background: rgba(255, 255, 255, 0);
   }
-  
+
   #sp-menu__check:checked ~ .sp-menu__box span::before {
     bottom: 0;
     transform: rotate(45deg);
   }
-  
+
   #sp-menu__check:checked ~ .sp-menu__box span::after {
     top: 0;
     transform: rotate(-45deg);
   }
-  
+
   #sp-menu__check:checked ~ .hamburger__content {
     left: 0;
   }
-  
+
   /*main-visual*/
   #main-visual {
     background-image: url(img/code.png);
@@ -410,56 +417,56 @@ footer {
     height: 650px;
     width: 100%;
   }
-  
+
   .item {
     width: 90%;
   }
-  
+
   .main-visual-item {
     padding-top: 200px;
   }
-  
+
   .main-visual-h2 {
     font-size: 40px;
   }
-  
+
   /*portfolio*/
   .portfolio-box:nth-child(odd) {
     display: none;
   }
-  
+
   .portfolio-box:nth-child(even) {
     margin: 0 auto;
   }
-  
+
   .portfolio-box:nth-child(4) {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  
-  
+
+
   /*feature*/
   .feature-contants {
     width: 90%;
   }
-  
+
   .feature-container {
     flex-direction: column;
   }
-  
+
   .feature-box {
     margin: 10px auto;
   }
-  
+
   .fa-code {
     margin-top: 30px;
   }
-  
+
   .feature-box:nth-child(2) {
     margin: 10px;
   }
-  
-  
+
+
   /*profile*/
   .profile-contants {
     width: 90%;
@@ -467,33 +474,33 @@ footer {
   }
   .container {
     width: 100%;
-  } 
-  
+  }
+
   .profile-p,
   .profile-h6 {
     text-align: center;
   }
-  
+
   .profile-h6 {
     padding-top: 20px;
   }
-  
+
   /*contact*/
   .contact-contants {
     flex-direction: column;
   }
-  
+
   .contact-container {
     text-align: center;
   }
-  
+
   .sns-h6 {
     margin-top: 20px;
   }
-  
+
   .fa-twitter {
     margin: 0 8px;
   }
-  
-  
+
+
 }
